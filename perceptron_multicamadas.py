@@ -63,5 +63,4 @@ def calcular_saida(valores, matriz, desejado):
     print("\n")
 
 for epoca in range(1):
-
     calcular_saida(valores, matriz, desejado)

@@ -103,11 +103,10 @@ def treinar(entrada, resposta_desejada, matriz_pesos, matriz_pesos_saida):
 
 qtd_epocas = int(input("Insira a quantia de épocas: "))
 
-
 for epoca in range(qtd_epocas):
     for posicao in range(len(valores)):
         saida = treinar(valores[posicao], desejado[posicao], matriz_pesos, matriz_pesos_saida)
         if epoca % 1000 == 0:
             print(f"Época: {epoca}")
-            print(f"Entrada: {valores[posicao]} | Saída: {saida} | Desejado: {desejado[posicao]}")
+            print(f"Entrada: {valores[posicao]} Saída: {saida} Desejado: {desejado[posicao]}")
 print(f"Treino concluído")

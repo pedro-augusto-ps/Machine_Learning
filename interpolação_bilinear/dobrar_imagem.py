@@ -5,10 +5,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 with open("topografia.txt", "r") as arquivo:
-    dados = arquivo.read()
+    dados = arquivo.read() #Abre o arquivo para leitura
 
-dados = dados.replace(",",".")
-linhas = dados.splitlines()
-matriz = np.loadtxt(linhas)
+dados = dados.replace(",",".") #Troca os dados que possuem ,
+linhas = dados.splitlines() #Fatia as linhas
+matriz = np.loadtxt(linhas) #Gera uma matriz com as linhas
 
-print(matriz)

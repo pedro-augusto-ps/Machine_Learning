@@ -7,7 +7,6 @@ import copy as cp
 from sklearn.metrics import confusion_matrix
 from sklearn.model_selection import train_test_split
 
-
 # Função de treinamento e teste do perceptron multicamada
 def multilayer_perceptron(dados):
     x = np.array(list(dados)).astype(float)
@@ -90,7 +89,6 @@ def multilayer_perceptron(dados):
     tn = cm[0,0]
     fp = cm[0,1]
     fn = cm[1,0]
-    
     
     # métricas de desempenho
     accuracy = (tp + tn)/(tp + tn + fp + fn)
